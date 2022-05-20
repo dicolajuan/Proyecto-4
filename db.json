@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juani Update",
+      "empresa": "Juaninc",
+      "email": "dicolajuan@gmail.com",
+      "telefono": "1167978451",
+      "notas": "Notas de prueba",
+      "id": 1
+    },
+    {
+      "nombre": "Prueba 2 ",
+      "empresa": "pruebac",
+      "email": "prueba@prueba.com",
+      "telefono": "1122233344",
+      "notas": "",
+      "id": 2
+    },
+    {
+      "nombre": "Prueba 3",
+      "empresa": "Pruebac",
+      "email": "prueba@prueba.com",
+      "telefono": "1122334455",
+      "notas": "",
+      "id": 3
+    },
+    {
+      "nombre": "prueba 4",
+      "empresa": "Pruebac",
+      "email": "prueba@prueba.com",
+      "telefono": "1122334455",
+      "notas": "",
+      "id": 4
+    },
+    {
+      "nombre": "Prueba 5",
+      "empresa": "pr",
+      "email": "prueba@prueba.com",
+      "telefono": "1122334455",
+      "notas": "",
+      "id": 5
+    }
+  ]
+}
