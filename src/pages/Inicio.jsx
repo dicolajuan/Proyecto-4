@@ -5,9 +5,13 @@ import { Helper } from "../helpers/Helper";
 const Inicio = () => {
   const [clientes, setClientes] = useState([]);
 
+  const {VITE_URL_API} = import.meta.env;
+
+  console.log(import.meta.env);
+
   const obtenerClientesAPI = async () => {
     try {
-      const clientesAPI = await Helper.obtenerClientes(Helper.URL_CLIENTES);
+      const clientesAPI = await Helper.obtenerClientes(VITE_URL_API);
       setClientes(clientesAPI);
     } catch (error) {
       console.log(error);
@@ -16,7 +20,7 @@ const Inicio = () => {
 
   const eliminarClienteAPI = async (id,clientesActualizados) => {
     try {
-      await Helper.eliminarCliente(`${Helper.URL_CLIENTES}/${id}`);
+      await Helper.eliminarCliente(`${VITE_URL_API}/${id}`);
       setClientes(clientesActualizados);
     } catch (error) {
       console.log(error);

@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "nombre": "Juani Update",
+      "nombre": "Juani",
       "empresa": "Juaninc",
       "email": "dicolajuan@gmail.com",
       "telefono": "1167978451",
@@ -31,14 +31,6 @@
       "telefono": "1122334455",
       "notas": "",
       "id": 4
-    },
-    {
-      "nombre": "Prueba 5",
-      "empresa": "pr",
-      "email": "prueba@prueba.com",
-      "telefono": "1122334455",
-      "notas": "",
-      "id": 5
     }
   ]
 }

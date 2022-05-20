@@ -10,10 +10,12 @@ const EditarCliente = () => {
 
   const { id } = useParams();
 
+  const {VITE_URL_API} = import.meta.env;
+
   const obtenerClienteAPI = async () => {
     try {
       const clienteAPI = await Helper.obtenerCliente(
-        `${Helper.URL_CLIENTES}/${id}`
+        `${VITE_URL_API}/${id}`
       );
       setCliente(clienteAPI);
     } catch (error) {

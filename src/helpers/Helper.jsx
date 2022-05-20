@@ -1,6 +1,5 @@
 export const Helper = {
-  URL_CLIENTES: "http://localhost:4000/clientes",
-
+  
   crearCliente: async (URL, cliente) => {
     return await fetch(URL, {
       method: "POST",

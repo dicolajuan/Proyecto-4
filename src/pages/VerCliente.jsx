@@ -8,10 +8,12 @@ const VerCliente = () => {
   const [cliente, setCliente] = useState({});
   const [loading, setLoading] = useState(true);
 
+  const {VITE_URL_API} = import.meta.env;
+
   const obtenerClienteAPI = async () => {
     try {
       const clienteAPI = await Helper.obtenerCliente(
-        `${Helper.URL_CLIENTES}/${id}`
+        `${VITE_URL_API}/${id}`
       );
       // console.log(clienteAPI);
       setCliente(clienteAPI);

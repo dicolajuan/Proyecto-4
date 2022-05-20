@@ -11,6 +11,8 @@ const Formulario = ({ cliente }) => {
 
   const navigate = useNavigate();
 
+  const {VITE_URL_API} = import.meta.env;
+
   const nuevoClienteSchema = Yup.object().shape({
     nombre: Yup.string()
       .min(5, "El nombre es muy corto")
@@ -28,7 +30,7 @@ const Formulario = ({ cliente }) => {
 
   const handleSubmit = async (client) => {
     try {
-      const URL = Helper.URL_CLIENTES;
+      const URL = VITE_URL_API;
 
       if(cliente.id) {
         console.log(`${URL}/${cliente.id}`);
